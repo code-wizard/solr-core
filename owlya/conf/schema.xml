@@ -83,43 +83,17 @@
     
     <field name="text" type="text_en" indexed="true" stored="true" multiValued="false" />
     
-    <field name="user" type="text_en" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="location" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="location_exact" type="string" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="name_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="email_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="first_name_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="last_name_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="user_id" type="long" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="user_city" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="user_skills" type="text_en" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="user_skills_exact" type="string" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="user_job_exp" type="text_en" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="user_job_exp_exact" type="string" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="user_country" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
     <field name="question_type" type="text_en" indexed="true" stored="true" multiValued="false" />
     
     <field name="question_type_exact" type="string" indexed="true" stored="true" multiValued="false" />
     
-    <field name="question_skills" type="text_en" indexed="true" stored="true" multiValued="true" />
+    <field name="tag" type="text_en" indexed="true" stored="true" multiValued="true" />
     
-    <field name="question_skills_exact" type="string" indexed="true" stored="true" multiValued="true" />
+    <field name="tag_exact" type="string" indexed="true" stored="true" multiValued="true" />
     
-    <field name="company_id" type="long" indexed="true" stored="true" multiValued="false" />
+    <field name="client" type="text_en" indexed="true" stored="true" multiValued="false" />
+    
+    <field name="user_id" type="text_en" indexed="true" stored="true" multiValued="false" />
     
     <field name="created_at" type="date" indexed="true" stored="true" multiValued="false" />
     
@@ -129,51 +103,7 @@
     
     <field name="updated_at_exact" type="date" indexed="true" stored="true" multiValued="false" />
     
-    <field name="job_status" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_level" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_level_exact" type="string" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_industry" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_industry_exact" type="string" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_industry_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="functions" type="text_en" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="functions_exact" type="string" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="skills" type="text_en" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="skills_exact" type="string" indexed="true" stored="true" multiValued="true" />
-    
-    <field name="job_id" type="long" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_title" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="pub_date" type="date" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="pub_date_exact" type="date" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_location_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_title_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_type_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="company_name" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="company_name_exact" type="string" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="job_location" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="has_bonus" type="boolean" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="company_status" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="main_company_name_auto" type="edge_ngram" indexed="true" stored="true" multiValued="false" />
+    <field name="is_deleted" type="boolean" indexed="true" stored="true" multiValued="false" />
     
     <uniqueKey>id</uniqueKey>
 
