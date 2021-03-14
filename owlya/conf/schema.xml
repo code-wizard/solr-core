@@ -76,34 +76,68 @@
             <filter class="solr.LowerCaseFilterFactory"/>
         </analyzer>
     </fieldType>
-
+   <fieldType name="string_big" class="solr.TextField"  sortMissingLast="true" omitNorms="true">
+        <analyzer>
+            <tokenizer class="solr.KeywordTokenizerFactory"/>
+        </analyzer>
+    </fieldType>
     <field name="id" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
     <field name="django_ct" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="django_id" type="string" indexed="true" stored="true" multiValued="false"/>
-    
+
     <field name="text" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="question_type" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
-    <field name="question_type_exact" type="string" indexed="true" stored="true" multiValued="false" />
-    
+
+    <field name="type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="type_exact" type="string" indexed="true" stored="true" multiValued="false" />
+
     <field name="tag" type="text_en" indexed="true" stored="true" multiValued="true" />
-    
+
     <field name="tag_exact" type="string" indexed="true" stored="true" multiValued="true" />
-    
+
     <field name="client" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
+
     <field name="user_id" type="text_en" indexed="true" stored="true" multiValued="false" />
-    
+
+    <field name="language" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="created_by" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="media_link" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="uuid" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="question_text" type="string_big" indexed="false" stored="true" multiValued="false" />
+
+    <field name="file_type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="field_type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="source_type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
     <field name="created_at" type="date" indexed="true" stored="true" multiValued="false" />
-    
+
     <field name="created_at_exact" type="date" indexed="true" stored="true" multiValued="false" />
-    
+
     <field name="updated_at" type="date" indexed="true" stored="true" multiValued="false" />
-    
+
     <field name="updated_at_exact" type="date" indexed="true" stored="true" multiValued="false" />
-    
+
     <field name="is_deleted" type="boolean" indexed="true" stored="true" multiValued="false" />
+
+    <field name="record_attempt" type="long" indexed="true" stored="true" multiValued="false" />
+
+    <field name="record_type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="play_limit" type="long" indexed="true" stored="true" multiValued="false" />
+
+    <field name="thinking_time" type="long" indexed="true" stored="true" multiValued="false" />
+
+    <field name="record_limit" type="long" indexed="true" stored="true" multiValued="false" />
+
+    <field name="no_of_usage" type="long" indexed="true" stored="true" multiValued="false" />
+
+    <field name="answers" type="string_big" indexed="false" stored="true" multiValued="true" />
     
     <uniqueKey>id</uniqueKey>
 
