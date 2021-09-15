@@ -138,6 +138,11 @@
     <field name="no_of_usage" type="long" indexed="true" stored="true" multiValued="false" />
 
     <field name="answers" type="string_big" indexed="false" stored="true" multiValued="true" />
+     <field name="shuffle" type="boolean" indexed="true" stored="true" multiValued="false" />
+
+    <field name="points" type="float" indexed="true" stored="true" multiValued="false" />
+
+    <field name="required" type="boolean" indexed="true" stored="true" multiValued="false" />
     
     <uniqueKey>id</uniqueKey>
 
