@@ -99,6 +99,7 @@
     <field name="client" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="user_id" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="uuid" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="language" type="text_en" indexed="true" stored="true" multiValued="false" />
 
@@ -107,8 +108,7 @@
     <field name="media_link" type="text_en" indexed="true" stored="true" multiValued="false" />
     <field name="media_type" type="text_en" indexed="true" stored="true" multiValued="false" />
     <field name="media_prep_time" type="long" indexed="true" stored="true" multiValued="false" />
-    <field name="uuid" type="text_en" indexed="true" stored="true" multiValued="false" />
-
+    <field name="rubric_uuid" type="text_en" indexed="true" stored="true" multiValued="false" />
     <field name="question_text" type="string_big" indexed="false" stored="true" multiValued="false" />
 
     <field name="file_type" type="text_en" indexed="true" stored="true" multiValued="false" />
