@@ -76,11 +76,7 @@
             <filter class="solr.LowerCaseFilterFactory"/>
         </analyzer>
     </fieldType>
-   <fieldType name="string_big" class="solr.TextField"  sortMissingLast="true" omitNorms="true">
-        <analyzer>
-            <tokenizer class="solr.KeywordTokenizerFactory"/>
-        </analyzer>
-    </fieldType>
+
     <field name="id" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
     <field name="django_ct" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="django_id" type="string" indexed="true" stored="true" multiValued="false"/>
@@ -90,6 +86,7 @@
     <field name="type" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="type_exact" type="string" indexed="true" stored="true" multiValued="false" />
+
     <field name="question_title" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="tag" type="text_en" indexed="true" stored="true" multiValued="true" />
@@ -99,17 +96,20 @@
     <field name="client" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="user_id" type="text_en" indexed="true" stored="true" multiValued="false" />
-    <field name="uuid" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="language" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="created_by" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="media_link" type="text_en" indexed="true" stored="true" multiValued="false" />
+
     <field name="media_type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
     <field name="media_prep_time" type="long" indexed="true" stored="true" multiValued="false" />
-    <field name="rubric" type="text_en" indexed="true" stored="true" multiValued="false" />
-    <field name="question_text" type="string_big" indexed="false" stored="true" multiValued="false" />
+
+    <field name="uuid" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="question_text" type="string" indexed="false" stored="true" multiValued="false" />
 
     <field name="file_type" type="text_en" indexed="true" stored="true" multiValued="false" />
 
@@ -125,11 +125,11 @@
 
     <field name="updated_at_exact" type="date" indexed="true" stored="true" multiValued="false" />
 
-    <field name="is_deleted" type="boolean" indexed="true" stored="true" multiValued="false" />
-
     <field name="record_attempt" type="long" indexed="true" stored="true" multiValued="false" />
 
     <field name="record_type" type="text_en" indexed="true" stored="true" multiValued="false" />
+
+    <field name="rubric" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="play_limit" type="long" indexed="true" stored="true" multiValued="false" />
 
@@ -139,8 +139,9 @@
 
     <field name="no_of_usage" type="long" indexed="true" stored="true" multiValued="false" />
 
-    <field name="answers" type="string_big" indexed="false" stored="true" multiValued="true" />
-     <field name="shuffle" type="boolean" indexed="true" stored="true" multiValued="false" />
+    <field name="shuffle" type="boolean" indexed="true" stored="true" multiValued="false" />
+
+    <field name="ai_auto_grade" type="boolean" indexed="true" stored="true" multiValued="false" />
 
     <field name="points" type="float" indexed="true" stored="true" multiValued="false" />
 
@@ -1117,4 +1118,3 @@
     -->
 
 </schema>
-
