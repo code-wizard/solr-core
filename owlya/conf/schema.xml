@@ -142,7 +142,7 @@
     <field name="shuffle" type="boolean" indexed="true" stored="true" multiValued="false" />
 
     <field name="ai_auto_grade" type="boolean" indexed="true" stored="true" multiValued="false" />
-    <field name="ai_context" type="text" indexed="true" stored="true" multiValued="false" />
+    <field name="ai_context" type="text_en" indexed="true" stored="true" multiValued="false" />
 
     <field name="points" type="float" indexed="true" stored="true" multiValued="false" />
 
